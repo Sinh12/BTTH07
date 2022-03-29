@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<div id="Form BTTH07">
+			<h1 class="heading">Registration Form</h1>
+			<form action="">
+					<div class="user-id">
+						<div class="title"><label for="user-id">User ID:</label></div>	
+						<input type="text" name="txtId" id="txtId" required>
+					</div>
+	    			<div class="password">
+						<div class="title"><label for="password">Password:</label></div>
+						<input type="text" name="txtPassword" id="txtPassword" required>
+					</div>	
+					<div class="name">
+						<div class="title"><label for="name">Name:</label></div>
+						<input type="text" name="txtName" id="txtName" required>
+					</div>
+					<div class="address">
+						<div class="title"><label for="address">Address:</label></div>
+						<input type="text" name="txtAddress" id="txtAddress">
+					</div>		
+					<div class="country">
+						<div class="title"><label for="country">Country:</label></div>
+						<select id="txtCountry" name="txtCountry"required>
+							<option value="">(Please select a country)</option>
+							<option value="VietNam">VietNam</option>
+							<option value="canada">Canada</option>
+							<option value="usa">USA</option>
+						</select>
+					</div>
+					<div class="zip-code">
+						<div class="title"><label for="zip-code">ZIP Code:</label></div>
+						<input type="text" name="txtZip-code" id="txtZip-code" required>
+					</div>
+					<div class="email">
+						<div class="title"><label for="email">Email:</label></div>
+						<input type="email" name="txtEmail" id="txtEmail" required>
+					</div>
+					<div class="sex">
+						<div class="title"><label for="sex">Sex:</label></div>
+							<div id="choose">
+								<input type="radio" name="txtSex" id="txtMale" required ><span>Male</span>
+								<input type="radio" name="txtSex" id="txtFemale"required ><span>Female</span>
+							</div>
+						</div>
+					<div class="language">
+						<div class="title"><label for="language">Language:</label></div>
+							<div id="choose">
+							<input type="checkbox" name="txtLanguage" id="txtEnglish" onclick="onlyOne(this)" required><span>English</span>
+							<input type="checkbox" name="txtLanguage" id="txtNon-english" onclick="onlyOne(this)"><span>Non English</span>
+						</div>
+					</div>
+					<div>
+						<button type="submit">Submit</button>
+					</div>
+			</form>
+		</div>
+	</main>
+		
+
+	<script src="../Registration Form/script.js"></script>
+</body>
+</html>
